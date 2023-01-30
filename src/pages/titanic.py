@@ -2,40 +2,26 @@ import dash
 dash.register_page(__name__)
 # Librerias
 import pandas as pd
-import numpy as np
-import time
 from sklearn.model_selection import train_test_split
-from sklearn.model_selection import cross_val_score
 import plotly.express as px
-from sklearn import datasets
-from sklearn.linear_model import SGDRegressor
-from sklearn.model_selection import cross_val_predict
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import cross_val_score
 import plotly.express as px
-from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
-from sklearn.metrics import r2_score
-from sklearn.metrics import mean_squared_error
-from sklearn.svm import LinearSVR
-import math
+from sklearn.model_selection import GridSearchCV
 from dash import dash_table,callback,Dash, html, dcc,  Input
-from dash import Output, no_update, ctx
+from dash import Output
 import plotly.express as px
 import dash_bootstrap_components as dbc
-from jupyter_dash import JupyterDash
 import data_science as ds
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-from sklearn import preprocessing
-from dash_bootstrap_templates import load_figure_template # para los fondos de  las imagenes
-import os        
-import random                                    
+import os                                          
 from dash import DiskcacheManager
 import diskcache
 import dash 
 cache = diskcache.Cache(os.path.join(os.path.dirname(__file__),'titanic_cache'))
 background_callback_manager = DiskcacheManager(cache)
+
+from importlib.machinery import SourceFileLoader
+ds = SourceFileLoader("add",os.path.join(os.path.dirname(__file__),'data_science.py')).load_module()  
 
 discrete_color_graph = px.colors.diverging.BrBG
 
