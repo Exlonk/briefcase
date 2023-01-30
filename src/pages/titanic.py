@@ -12,7 +12,6 @@ from dash import dash_table,callback,Dash, html, dcc,  Input
 from dash import Output
 import plotly.express as px
 import dash_bootstrap_components as dbc
-import data_science as ds
 import os                                          
 from dash import DiskcacheManager
 import diskcache
