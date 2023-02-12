@@ -1,0 +1,9 @@
+
+NUMERICAL_IMPUTER
+KNNImputer()
+
+CATEGORICAL_IMPUTER
+passthrough
+
+CATEGORICAL_ENCODER
+OneHotEncoder()

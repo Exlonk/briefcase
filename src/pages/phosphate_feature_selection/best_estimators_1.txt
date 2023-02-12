@@ -1,0 +1,19 @@
+
+NUMERICAL_IMPUTER
+KNNImputer(): 100
+
+CATEGORICAL_IMPUTER
+passthrough: 60
+SimpleImputer(strategy='most_frequent'): 40
+
+CATEGORICAL_ENCODER
+OneHotEncoder(): 100
+
+SCALER
+passthrough: 40
+RobustScaler(): 20
+StandardScaler(): 20
+MaxAbsScaler(): 20
+
+ESTIMATOR
+LinearRegression: 100

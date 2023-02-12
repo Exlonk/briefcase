@@ -1,0 +1,33 @@
+DISTRIBUTION
+passthrough: 8
+PowerTransformer(): 3
+QuantileTransformer(output_distribution='normal'): 4
+
+OUTLIER
+IsolationForest(): 4
+LocalOutlierFactor(): 11
+
+NUM_CAT_FEATURE
+SelectKBest(k=4, score_func=<function mutual_info_regression at 0x14e04e40c820>): 3
+PCA(n_components=3): 11
+SelectKBest(k=6, score_func=<function mutual_info_regression at 0x14e04e40c820>): 1
+
+NUMERICAL_FEATURE
+passthrough: 1
+SelectKBest(k=3, score_func=<function r_regression at 0x14e04e8e1cf0>): 2
+SelectKBest(k=6, score_func=<function r_regression at 0x14e04e8e1cf0>): 1
+SelectKBest(k=1, score_func=<function r_regression at 0x14e04e8e1cf0>): 9
+SelectKBest(k=7, score_func=<function r_regression at 0x14e04e8e1cf0>): 2
+
+CATEGORICAL_FEATURE
+passthrough: 15
+
+SCALER
+RobustScaler(): 1
+MinMaxScaler(): 3
+passthrough: 8
+StandardScaler(): 2
+MaxAbsScaler(): 1
+
+ESTIMATOR
+LinearRegression: 15

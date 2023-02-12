@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import plotly.express as px
-import plotly.express as px
 import dash_bootstrap_components as dbc
 import dash 
 
@@ -16,4 +15,4 @@ server = app.server
 app.layout = dash.page_container
 
 if __name__ == "__main__":
-    app.run(port=8077)
+    app.run()
